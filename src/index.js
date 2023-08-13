@@ -1,6 +1,6 @@
 (async function () {
   async function fetchData() {
-    let data = await fetch("./data.json");
+    let data = await fetch("./mockData/data.json");
     data = await data.json();
     return data;
   }
@@ -37,7 +37,7 @@
   }
 
   function renderInfoDetails() {
-    employeeinfo.innerHTML = `<img class="employee__single--image" src="./avatar.jpg">
+    employeeinfo.innerHTML = `<img class="employee__single--image" src="./asset/avatar.jpg">
      <span>${selectedEmployee.firstName} ${selectedEmployee.lastName} </span>
     `;
   }
