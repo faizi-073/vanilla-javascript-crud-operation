@@ -1,0 +1,124 @@
+body {
+  font-family: sans-serif;
+  padding: 0 10px;
+}
+
+:root {
+  --btn: #0d41ec;
+  --btn-hover: #dbdbdb;
+  --btn-color-black: #1d1c1c;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header > .addEmplyee__Button {
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: var(--btn);
+  color: #dbdbdb;
+}
+
+.employees {
+  display: flex;
+  justify-content: center;
+}
+
+.employees > div {
+  border: 2px solid var(--btn-color-black);
+  overflow-y: scroll;
+  height: 450px;
+}
+
+.employee__list {
+  width: 30%;
+}
+
+.employee__details {
+  width: 70%;
+}
+
+.emplyees__names--title,
+.employee__single--title {
+  padding: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+  border-bottom: 1px solid var(--btn-color-black);
+}
+
+.employee__name--list {
+  display: flex;
+  flex-direction: column;
+}
+.employee__name--list .selected {
+  background-color: darkcyan;
+}
+
+.emplpyee__name--item {
+  background-color: #dbdbdb;
+  margin: 2px;
+  padding: 5px;
+}
+
+.employeeDelete {
+  cursor: pointer;
+  float: right;
+}
+
+.employee__sigle--info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.employee__single--image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.employee--addForm > input {
+  display: block;
+}
+
+.employee__add {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: #0000005e;
+}
+.employee--addForm {
+  width: 400px;
+  background-color: white;
+  box-shadow: 0 0 50px grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px 20px;
+}
+.employee__add input {
+  padding: 5px 10px;
+  border: 1px solid #1d1c1c;
+  border-radius: 5px;
+}
+
+.employee__add button {
+  padding: 5px 20px;
+}
